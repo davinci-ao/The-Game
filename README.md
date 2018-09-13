@@ -11,6 +11,8 @@ Deze opdracht moet aan de volgende functionele eisen voldoen:
 * het verhaal kent meerdere "faal" eindes;
 * het verhaal kent meerdere routes en meerdere eindpunten, je kunt het verhaal dus meerdere keren spelen met verschillende uitkomsten;
 
+Een voorbeeld van een game kan zijn GTA 5.
+
 ### Technische eisen
 Technische eisen beschrijven aan welke vakgerichte voorwaarden de opdracht moet voldoen. 
 
