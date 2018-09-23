@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>The beginning</title>
+</head>
+
+<body>
+	<script>
+		alert("Je word wakker op een eiland.");
+		var keus1 = prompt("Je ziet een stad en een afgelegen pad, waar ga je heen? stad of pad?");
+		if(keus1 =="stad"){
+			alert("Je gaat zoeken in de stad voor waar je bent");
+			var keus1stad = prompt("Je komt binnen bij de stad je ziet mensen, maar t lijken niet op mensen, ga je naar de mensen toe of blijf je wachten? mensen of wachten?");
+		}
+		console.log(keus1);
+		if(keus1stad =="mensen"){
+			var keus2stad = prompt("je benaderd de mensen en ze beginnen je te zien en rustig naar je toe te komen. benader je ze of ga je zoeken in de huizen voor antwoorden en items? benaderen of items");
+		}
+		console.log(keus1stad);
+		if(keus1stad =="wachten"){
+			alert("Je was te sloom je bent dood gegaan door verhongering");
+		}
+		console.log(keus1stad);
+		if(keus2stad =="benaderen"){
+		alert("Je benaderd de mensen maar toen je dichtbij kwam ben je gebeten.");
+		alert("je rende weg, een paar dagen later werd je een zombie");
+		alert("YOU LOST");	
+		}
+		console.log(keus2stad);
+		if(keus2stad =="items"){
+			alert("Je ging een huis in, opeens werd je gebeten in je nek");
+			alert("Je kon niet meer bewegen, je bent doodgegaan op de grond");
+			alert("YOU DIED");
+		}
+		console.log(keus2stad);
+		if(keus1 =="pad"){
+			alert("Je besluit het afgelegen pad te nemen");
+			var keus1pad = prompt("Na een tijdje lopen kom je aan bij een grote schuur en een huis wil je gaan zoeken in het huis of in de schuur?");
+		}
+		console.log(keus1);
+		if(keus1pad =="huis"){
+			alert("Je gaat het huis binnen, je hoord iemand schreeuwen in de verte maar gaat toch verder met zoeken.");
+			alert("Je zoekt alles af in het huis en vind een hakbijl!");
+			var hakbijl = 1
+			alert("Alles is afgezocht je hebt wat eten gevonden maar dit was allemaal gerot");
+			var keus1pad = prompt("Wil je nu de schreeuw gaan onderzoeken of in de schuur kijken? schreeuw of schuur?");
+		}
+		console.log(keus1pad);
+		if(keus1pad =="schuur"){
+			alert("je gaat in de schuur zoeken of je daar items kan vinden, je vind een 9mm gun met een doosje ammunitie.");
+			var m1911 = 1
+			var kleinePatronen = 6
+			var keus2pad = prompt("Je hoort een schreeuw, wil je op onderzoek? schreeuw of hier blijven.");
+		}
+		console.log(keus1pad);
+		if(keus2pad =="schreeuw"){
+			alert("Je besluit de schuur achterwegen te laten en op onderzoek te gaan, je loopt door het graanveld heen maar hoord iemand achter je gaat wegrennen om je wapens veilig te houden");
+			alert("Na het graanveld kijk je naar achter maar het gene wat je volgde is weg.");
+			alert("Je komt uit in een open plek je ziet iemand in nood maar je hebt geen items om te helpen je besluit om verder te gaan.");
+			alert("De persoon in nood heeft een radio die verteld dat er helicopters komen om mensen te redden.");
+			var keus3pad = prompt("Wil je een SOS maken in het open veld voor je? en wil je de persoon helpen? ja, ja of nee, nee etc.");
+		}
+		console.log(keus2pad);
+		if(keus2pad =="hier blijven"){
+			alert("Je bleef bij de farm, je hebt even overleefd.");
+			alert("Er zijn zombies langs gekomen en door je wapens ben je toen veilig gebleven.");
+			alert("Maar na een tijd moest je toch eten dus ben je begonnen aan het gerotte fruit.");
+			alert("Het fruit was je dood.");
+			alert("YOU DIED");
+		}
+		console.log(keus2pad);
+		if(keus3pad =="ja, ja"){
+			alert("Je hebt een SOS met stenen en takken gemaakt en de persoon onderhouden voor 2 dagen toen kwam de helicopter jullie redden.");
+			alert("Jullie zijn bijden naar het ziekenhuis gebracht en geholpen");
+			alert("YOU WIN, GOOD KARMA");
+		}
+		console.log(keus3pad);
+		if(keus3pad =="ja, nee"){
+			alert("Je hebt een SOS met stenen en takken gemaakt en de persoon achtergelaten, 2 dagen later kwam de helicopter jouw redden.");
+			alert("Jij bent naar het ziekenhuis gebracht en je bent geholpen");
+			alert("YOU WIN, BAD KARMA");
+		}
+		console.log(keus3pad);
+		if(keus3pad =="nee, nee"){
+			alert("Je besloot om zelf te overleven, na 261 dagen ging je dood door een zombie horde.");
+			alert("YOU WIN, YOU DIED A WARRIOR");
+		}
+		console.log(keus3pad);
+		if(keus3pad =="nee, ja"){
+			alert("Je besloot geen SOS te maken en te overleven met de persoon, je ging snel dood omdat de persoon was gestransformeerd in een zombie en jouw heeft vermoord.");
+			alert("YOU LOST, THE GOOD GUY ENDING");
+		}
+		console.log(keus3pad);
+	</script>
+</body>
+</html>
