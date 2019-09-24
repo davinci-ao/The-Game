@@ -1,6 +1,8 @@
 //John Spruijt
 //2019
 
+error = false
+
 alert("Welcome to The broken game.")
 name = prompt("What is your name?")
 answer = prompt("Nice to meet you " +name+ ". You have decided to play this game. \n\n 1(Yes i have \n2(No i haven't \n\n type 1 or 2")
@@ -66,7 +68,7 @@ if (answer == 1) {
                                                                             alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
                                                                         else {
-                                                                            alert("invalid answer")
+                                                                            error = true
                                                                         }
                                                                         
                                                                 }
@@ -78,7 +80,7 @@ if (answer == 1) {
                                                                     alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                 }
                                                                 else {
-                                                                    alert("invalid answer")
+                                                                    error = true
                                                                 }
                                                         }
                                                         if (answer == 2) {
@@ -100,8 +102,17 @@ if (answer == 1) {
                                                                             alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
                                                                         else {
-                                                                            alert("invalid answer")
+                                                                            error = true
                                                                         }
+                                                                }
+                                                                else if (answer == 2) {
+                                                                    alert("You decline the opportunity of work, but you are still very tired so you decide to go outside and lay down in a grass field.")
+                                                                    alert("You wake up to the sound of the chanting of a wild goblin tribe.")
+                                                                            alert("Before you can react they are already at your legs taking bites out of you.")
+                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                }
+                                                                else {
+                                                                    error = true
                                                                 }
 
                                                         }
@@ -119,20 +130,35 @@ if (answer == 1) {
                                                                     alert("You see a bunch of people in panic. Families paniced trying to find each other. Fighters and gaurds on the lookout for any sudden movements.")
                                                                     answer = prompt("Do you aproach the group of people or do you run past them. \n\n1(You aproach the group of people\n2(You run past the group")
                                                                         if (answer == 1) {
-                                                                            answer = prompt("You aproach the group of people. 'The goblins attacked when entered town, you bring evil with you!' screams the Inn keeper\n\n1(Tell them that you want to help them fight the goblins off\n2(Tell them that it isnt your fault and you dont hace to deal with this kind of negativity")
+                                                                            answer = prompt("You aproach the group of people. 'The goblins attacked when entered town, you bring evil with you!' screams the Inn keeper\n\n1(Tell them that you want to help them fight the goblins off\n2(Tell them that it isnt your fault and you dont have to deal with this kind of negativity")
                                                                                 if (answer == 1) {
                                                                                     answer = prompt("'hmm, alright then. Pick up this sword and help us take those bastards down. \n\n1(Pick up the sword and help them\n2(change your mind and run past them")
                                                                                         if (answer == 1) {
                                                                                             alert("You pick up the sword and walk with the group back towards the village.")
                                                                                             answer = prompt("Out of nowhere you see a goblin standing on the road in front of you with a throwing spear.\n\n1(Duck!\n2(Try to deflect the spear")
                                                                                                 if (answer == 1) {
-                                                                                                    alert("How did you think a duck would be able to help you in this situation. You get hit by the spear and die quite quickly of your injury\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                                    alert("Ducks are cute, but how did you think a duck would be able to help you in this situation. You get hit by the spear and die quite quickly of your injury\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                                 }
                                                                                                 if (answer == 2) {
-                                                                                                    /////////////////////////////////
+                                                                                                    alert("You steady yourself ready to deflect the spear. Before the spear gets near you someone with a shield jumps in front of you and blocks the spear.\nYou are saved from the spear by a guy with a shield.")
+                                                                                                    answer = prompt("As you charge inside the village with your group of people.\n Near the Inn you see a goblin with something on his head that looks like a crown. \n\n1(You charge towards the leader\n2(You play it safe")
+                                                                                                        if (answer == 1) {
+                                                                                                            alert("You charge towards the leader with your shield buddy.")
+                                                                                                            alert("Together you take on the leader of the goblins.\n after a long battle you defeat the leader of the goblins")
+                                                                                                            alert("The smaller goblins scatter back to where they came from.")
+                                                                                                            alert("The Inn keeper walks towards you and says 'You really did it, you killed the goblin leader.'")
+                                                                                                            alert("'You will be able to stay in my Inn forever and for free.'\n\n You won the battle and are considered the village hero.\n\nYOU BECAME THE TOWN HERO")
+                                                                                                        }
+                                                                                                        if (answer == 2){
+                                                                                                            alert("You play is safe and take the smaller goblins on like the scaredy cat you are "+name+".")
+                                                                                                            alert("After a long and hard battle you get surrounded by goblins. Like the milkdrinker you are you die by the smaller goblins.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                                        }
+                                                                                                        else {
+                                                                                                            error = true
+                                                                                                        }
                                                                                                 }
                                                                                                 else {
-                                                                                                    alert("invalid answer")
+                                                                                                    error = true
                                                                                                 }
                                                                                         }
                                                                                         if (answer == 2) {
@@ -141,14 +167,16 @@ if (answer == 1) {
                                                                                             alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                         }
                                                                                         else {
-                                                                                            alert("invalid answer")
+                                                                                            error = true
                                                                                         }
                                                                                 }
                                                                                 if (answer == 2) {
-
+                                                                                    alert("You run past the group of people thinking to yourself you dont have to be the fastest as long as you are faster then the slowest.")
+                                                                                    alert("This apears to be false though, considering golbins are coming from the sides of the road and you can see a group of them standing further up the road.")
+                                                                                    alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                 }
                                                                                 else {
-                                                                                    alert("invalid answer")
+                                                                                    error = true
                                                                                 }
                                                                         }
                                                                         if (answer == 2) {
@@ -157,21 +185,23 @@ if (answer == 1) {
                                                                             alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
                                                                         else {
-                                                                            alert("invalid answer")
+                                                                            error = true
                                                                         }
                                                                 }
                                                                 if (answer == 2) {
-
+                                                                    alert("You get angry at the voice and demand to know who it is.")
+                                                                    alert("'I just wanted to help you, but it seems you dont want my help. Enjoy being eaten by goblins "+name)
+                                                                    alert("goblins charge trough the door and you get taken out by suprise.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                 }
                                                                 if (answer == 3) {
-                                                                    alert("You ignore the voice and turn around in your bed to sleep some more. You are killed by golbins in your sleep.\n\nGAME OVER")
+                                                                    alert("You ignore the voice and turn around in your bed to sleep some more. You are killed by golbins in your sleep.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                 }
                                                                 else {
-                                                                    alert("invalid answer")
+                                                                    error = true
                                                                 }
                                                         }
                                                         else {
-                                                            alert("invalid answer")
+                                                            error = true
                                                         }
                                                 }
 
@@ -180,22 +210,34 @@ if (answer == 1) {
                                 }
                         }
                         else {
-                            alert("invalid answer")
+                            error = true
                         }
+                }
+                else if (answer == 2) {
+                    alert("You continue walking even though you are tired and hungry.")
+                    alert("Because of those reasons you are less alert.\nYou step in a bear trap and get stuck.")
+                    alert("While you are stuck you hear some bushes rustle next to you.")
+                    alert("Goblins apear and they start dragging you to their camp. you are then eaten alive by the goblins. \n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                }
+                else {
+                    error = true
                 }
         }
         else if (answer == 3) {
-            alert("this path hasn't been programmed yet.")
+            alert("You head down south of the road.")
         }
         else {
-            alert("invalid answer")
+            error = true
         }
 }
 else if (answer == 2) {
     alert("What are you doing here! get out!")
 }
 else {
-    alert("invalid answer")
+    error = true
 }
 
+if (error == true){
+    alert("invalid answer")
+}
 //Look on the bright side the goblins have a new meal to eat.\n\nGAME OVER
