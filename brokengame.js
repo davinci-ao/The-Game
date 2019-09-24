@@ -1,4 +1,5 @@
-//J
+//John Spruijt
+//2019
 
 alert("Welcome to The broken game.")
 name = prompt("What is your name?")
@@ -128,7 +129,7 @@ if (answer == 1) {
                                                                                                     alert("How did you think a duck would be able to help you in this situation. You get hit by the spear and die quite quickly of your injury\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                                 }
                                                                                                 if (answer == 2) {
-
+                                                                                                    /////////////////////////////////
                                                                                                 }
                                                                                                 else {
                                                                                                     alert("invalid answer")
