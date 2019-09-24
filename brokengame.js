@@ -29,7 +29,66 @@ if (answer == 1) {
                         }
                         if (answer == 2) {
                             alert('You continue walking up to road.\n after a while the dirt road changes to a gravel road. "The sign of civilazation" you think to yourself.')
-                            answer= prompt("You hear the sound of a horse and wagon aproaching.")
+                            answer= prompt("You hear the sound of a horse and wagon aproaching.\n\n1(Hide in a nearby bush \n2(continue walking ignoring the wagon \n3(wave the wagon down.")
+                                if (answer == 1){
+                                    alert("You hide in a nearby bush. Not knowing it is thorn bush.")
+                                    alert("After the wagon passes and you feel like it is far enough for you to come out safely you hurt yourself when getting back up. \n\n You are injured.")
+                                    alert("You continue walking up the road. After about half an hour you enter a village.")
+                                    answer = prompt("There is an Inn called 'the winking skeever'\n\n1(Go inside the Inn\n2(Walk straight trough the village and continue down the road.")
+                                        if (answer == 1) {
+                                            answer = prompt("You go inside the Inn. There is a Inn keeper and a drunk fellow sitting next to the fire. \n\n1(Talk to the Inn keeper\n2(Talk to the drunk fellow")
+                                                if (answer == 1) {
+                                                    answer = prompt("You talk to the Inn Keeper. \n\n1(Ask about some rumours.\n2(You ask about some work to earn some coin\n3(You ask if they have a bed, you are still tired after all.")
+                                                        if (answer == 1) {
+                                                            alert("You ask the Inn keeper about some rumours.'The Companions? In Jorrvaskr? They're recruiting new members, from what I hear.'")
+                                                            alert("Who are the companions and what is a jorrvaskr you think to yourself.")
+                                                            answer = prompt("1(You ask about some work to earn some coin\n2(You ask if they have a bed, you are still tired after all.")
+                                                                if (answer == 1) {
+                                                                    alert("You ask the Inn keeper about some work.\n'You're asking a lot of qeustions aren't you?' The Inn keeper puts his hand on his axe.")
+                                                                    answer = prompt("How will you diffuse the situation? \n\n 1(Tell him you don't know who you are and are searching for answers. \n2(Lie and tell you are from noble decent.")
+                                                                        if (answer == 1) {
+                                                                            alert("You chose to tell the truth.'You think im dumb enough to believe that?' The Inn keeper reaches for his axe.")
+                                                                            alert("You get hit on the head by the end of the axe.")
+                                                                            alert("You wake up with a headache. You are tied up in the middle of a grass field.")
+                                                                            alert("You hear the chanting of a wild goblin tribe.")
+                                                                            alert("They charge at you and begin taking bites out of you legs while you are struggeling to get free.")
+                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                        }
+                                                                        if (answer == 2) {
+                                                                            alert("You lied and told the Inn keeper your from noble decent.'Ha! Nobles wouldnt want to come to this village let alone work for me.' The Inn keeper reaches for his axe.")
+                                                                            alert("You get hit on the head by the end of the axe.")
+                                                                            alert("You wake up with a headache. You are tied up in the middle of a grass field.")
+                                                                            alert("You hear the chanting of a wild goblin tribe.")
+                                                                            alert("They charge at you and begin taking bites out of you legs while you are struggeling to get free.")
+                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                        }
+                                                                        else {
+                                                                            alert("invalid answer")
+                                                                        }
+                                                                        
+                                                                }
+                                                                if (answer == 2) {
+                                                                    alert("You ask if they have a bed available. 'No sorry, we ar full. If you asked when you came in we still had a bed available.'")
+                                                                    alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
+                                                                    alert("You wake up to the sound of the chanting of a wild goblin tribe.")
+                                                                    alert("Before you can react they are already at your legs taking bites out of you.")
+                                                                    alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                }
+                                                                else {
+                                                                    alert("invalid answer")
+                                                                }
+                                                        }
+                                                        if (answer == 2) {
+                                                            answer = prompt("You ask the Inn keeper about some work.'Work? You could chop some wood for the fire for some coin.\n\n1(Chop some wood\n2(Decline")
+                                                                if (answer == 1) {
+                                                                    alert("You chop some wood. Then you go back inside.")
+                                                                }
+
+                                                        }
+                                                }
+                                        }
+                                    
+                                }
                         }
                         else {
                             alert("invalid answer")
