@@ -7,6 +7,8 @@ alert("Welcome to The broken game.")
 name = prompt("What is your name?")
 answer = prompt("Nice to meet you " +name+ ". You have decided to play this game. \n\n 1(Yes i have \n2(No i haven't \n\n type 1 or 2")
 if (answer == 1) {
+    console.log("lvl 1");
+    
     answer = prompt("You are standing on a dirt road, next to you is a forest.\n\n 1(Go into the forest \n2(go north up the road\n 3(go south down the road")
         if(answer == 1) {
             alert("Ignoring the rumors about the goblins you decide to go into the forest.")
@@ -208,7 +210,9 @@ if (answer == 1) {
                                                     alert("You talk to the drunk fellow. He says there is a buried treasure in the forest and he knows where to find it.")
                                                     answer = prompt("He says he will tell you where it is if you engage in a drinking contest with him. \n\n1(Engage in the drinking contest\n2(decline")
                                                         if (answer == 1) {
-
+                                                            alert("You accept his invitation to the drinking contest.")
+                                                            alert("You chug drink afet drink with the drunk fellow.")
+                                                            answer = prompt("You are so drunk you fall unconscious.\n\nYou wake up in a bed you don't reconise with a woman next to you. \n\n1(Ask the woman if she remembers what happend\n2(Go outside to search for clues as to what happend.")
                                                         }
                                                         else if (answer == 2) {
                                                             answer = prompt("You decline the drinking contest. \n\n1(Talk to the Inn keeper")
@@ -290,7 +294,14 @@ if (answer == 1) {
 
                                         }
                                         else if (answer == 2) {
-
+                                            alert("You walk trough the village without stoping even though you are still quite hungry.")
+                                            alert("after walking a while you come across a knocked over wagon with supplies in it.\nYou look around but there is nobody in sight.")
+                                            answer = prompt("You could take some of the supplies or keep walking. \n\n1(Take supplies\n2(Keep walking.")
+                                                if (answer == 1) {
+                                                    alert("You rummage trough the supplies. You find some food and a bit of rope")
+                                                    alert("While rummaging trough the supplies you don't notice the goblins who knocked the wagon over sneaking up on you.")
+                                                    alert("You are killed by the goblins and taken to their leader for dinner.\n\nLook on the bright side the leader goblin have a new meal to eat.\n\nGAME OVER")
+                                                }
                                         }
                                         else {
                                             error = true
