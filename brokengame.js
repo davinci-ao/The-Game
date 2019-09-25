@@ -30,11 +30,11 @@ if (answer == 1) {
                             alert("You decide to take a nap against the large tree.")
                             alert("You wake up to the burning sensation on your skin.")
                             alert("You notice you are hanging above a fire. You are tied up so you cant escape.")
-                            alert("At last you notice the golbins dancing around the fire.\n Look on the bright side the goblins have a new meal to eat.\n\n GAME OVER")
+                            alert("At last you notice the goblins dancing around the fire.\n Look on the bright side the goblins have a new meal to eat.\n\n GAME OVER")
                         }
                         else if (answer == 2) {
                             alert('You continue walking up to road.\n after a while the dirt road changes to a gravel road. "The sign of civilazation" you think to yourself.')
-                            answer= prompt("You hear the sound of a horse and wagon aproaching.\n\n1(Hide in a nearby bush \n2(continue walking ignoring the wagon \n3(wave the wagon down.")
+                            answer= prompt("You hear the sound of a horse and wagon aproaching from the south.\n\n1(Hide in a nearby bush \n2(continue walking ignoring the wagon \n3(wave the wagon down.")
                                 if (answer == 1){
                                     alert("You hide in a nearby bush. Not knowing it is thorn bush.")
                                     alert("After the wagon passes and you feel like it is far enough for you to come out safely you hurt yourself when getting back up. \n\n You are slightly injured.")
@@ -59,7 +59,7 @@ if (answer == 1) {
                                                                             alert("They charge at you and begin taking bites out of you legs while you are struggeling to get free.")
                                                                             alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
-                                                                        if (answer == 2) {
+                                                                        else if (answer == 2) {
                                                                             alert("You lied and told the Inn keeper your from noble decent.'Ha! Nobles wouldnt want to come to this village let alone work for me.' The Inn keeper reaches for his axe.")
                                                                             alert("You get hit on the head by the end of the axe.")
                                                                             alert("You wake up with a headache. You are tied up in the middle of a grass field.")
@@ -72,7 +72,7 @@ if (answer == 1) {
                                                                         }
                                                                         
                                                                 }
-                                                                if (answer == 2) {
+                                                                else if (answer == 2) {
                                                                     alert("You ask if they have a bed available. 'No sorry, we are full. If you asked when you came in we still had a bed available.'")
                                                                     alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
                                                                     alert("You wake up to the sound of the chanting of a wild goblin tribe.")
@@ -83,7 +83,7 @@ if (answer == 1) {
                                                                     error = true
                                                                 }
                                                         }
-                                                        if (answer == 2) {
+                                                        else if (answer == 2) {
                                                             answer = prompt("You ask the Inn keeper about some work.'Work? You could chop some wood for the fire for some coin.\n\n1(Chop some wood\n2(Decline")
                                                                 if (answer == 1) {
                                                                     alert("You chop some wood. Then you go back inside.")
@@ -95,7 +95,7 @@ if (answer == 1) {
                                                                             alert("Before you can react they are already at your legs taking bites out of you.")
                                                                             alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
-                                                                        if (answer == 2) {
+                                                                        else if (answer == 2) {
                                                                             alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
                                                                             alert("You wake up to the sound of the chanting of a wild goblin tribe.")
                                                                             alert("Before you can react they are already at your legs taking bites out of you.")
@@ -116,7 +116,7 @@ if (answer == 1) {
                                                                 }
 
                                                         }
-                                                        if (answer == 3) {
+                                                        else if (answer == 3) {
                                                             alert("You chose to ask for a bed. 'What does this look like? the temple of mara?'")
                                                             alert("You don't have any money. It seems like you will need to sleep outside.")
                                                             alert("'You know what? How about you chop some wood for me, and I'll keep a room available.'\nThis is a very friendly Inn keeper.")
@@ -139,7 +139,7 @@ if (answer == 1) {
                                                                                                 if (answer == 1) {
                                                                                                     alert("Ducks are cute, but how did you think a duck would be able to help you in this situation. You get hit by the spear and die quite quickly of your injury\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                                 }
-                                                                                                if (answer == 2) {
+                                                                                                else if (answer == 2) {
                                                                                                     alert("You steady yourself ready to deflect the spear. Before the spear gets near you someone with a shield jumps in front of you and blocks the spear.\nYou are saved from the spear by a guy with a shield.")
                                                                                                     answer = prompt("As you charge inside the village with your group of people.\n Near the Inn you see a goblin with something on his head that looks like a crown. \n\n1(You charge towards the leader\n2(You play it safe")
                                                                                                         if (answer == 1) {
@@ -149,7 +149,7 @@ if (answer == 1) {
                                                                                                             alert("The Inn keeper walks towards you and says 'You really did it, you killed the goblin leader.'")
                                                                                                             alert("'You will be able to stay in my Inn forever and for free.'\n\n You won the battle and are considered the village hero.\n\nYOU BECAME THE TOWN HERO")
                                                                                                         }
-                                                                                                        if (answer == 2){
+                                                                                                        else if (answer == 2){
                                                                                                             alert("You play is safe and take the smaller goblins on like the scaredy cat you are "+name+".")
                                                                                                             alert("After a long and hard battle you get surrounded by goblins. Like the milkdrinker you are you die by the smaller goblins.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                                         }
@@ -161,40 +161,40 @@ if (answer == 1) {
                                                                                                     error = true
                                                                                                 }
                                                                                         }
-                                                                                        if (answer == 2) {
+                                                                                        else if (answer == 2) {
                                                                                             alert("You run past the group of people thinking to yourself you dont have to be the fastest as long as you are faster then the slowest.")
-                                                                                            alert("This apears to be false though, considering golbins are coming from the sides of the road and you can see a group of them standing further up the road.")
+                                                                                            alert("This apears to be false though, considering goblins are coming from the sides of the road and you can see a group of them standing further up the road.")
                                                                                             alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                         }
                                                                                         else {
                                                                                             error = true
                                                                                         }
                                                                                 }
-                                                                                if (answer == 2) {
+                                                                                else if (answer == 2) {
                                                                                     alert("You run past the group of people thinking to yourself you dont have to be the fastest as long as you are faster then the slowest.")
-                                                                                    alert("This apears to be false though, considering golbins are coming from the sides of the road and you can see a group of them standing further up the road.")
+                                                                                    alert("This apears to be false though, considering goblins are coming from the sides of the road and you can see a group of them standing further up the road.")
                                                                                     alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                                 }
                                                                                 else {
                                                                                     error = true
                                                                                 }
                                                                         }
-                                                                        if (answer == 2) {
+                                                                        else if (answer == 2) {
                                                                             alert("You run past the group of people thinking to yourself you dont have to be the fastest as long as you are faster then the slowest.")
-                                                                            alert("This apears to be false though, considering golbins are coming from the sides of the road and you can see a group of them standing further up the road.")
+                                                                            alert("This apears to be false though, considering goblins are coming from the sides of the road and you can see a group of them standing further up the road.")
                                                                             alert("You get killed by the massive amount of goblins. \nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                         }
                                                                         else {
                                                                             error = true
                                                                         }
                                                                 }
-                                                                if (answer == 2) {
+                                                                else if (answer == 2) {
                                                                     alert("You get angry at the voice and demand to know who it is.")
                                                                     alert("'I just wanted to help you, but it seems you dont want my help. Enjoy being eaten by goblins "+name)
                                                                     alert("goblins charge trough the door and you get taken out by suprise.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                 }
-                                                                if (answer == 3) {
-                                                                    alert("You ignore the voice and turn around in your bed to sleep some more. You are killed by golbins in your sleep.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                else if (answer == 3) {
+                                                                    alert("You ignore the voice and turn around in your bed to sleep some more. You are killed by goblins in your sleep.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
                                                                 }
                                                                 else {
                                                                     error = true
@@ -204,9 +204,127 @@ if (answer == 1) {
                                                             error = true
                                                         }
                                                 }
+                                                else if (answer == 2) {
+                                                    alert("You talk to the drunk fellow. He says there is a buried treasure in the forest and he knows where to find it.")
+                                                    answer = prompt("He says he will tell you where it is if you engage in a drinking contest with him. \n\n1(Engage in the drinking contest\n2(decline")
+                                                        if (answer == 1) {
+
+                                                        }
+                                                        else if (answer == 2) {
+                                                            answer = prompt("You decline the drinking contest. \n\n1(Talk to the Inn keeper")
+                                                                if (answer == 1) {
+                                                                    answer = prompt("You talk to the Inn Keeper. \n\n1(Ask about some rumours.\n2(You ask about some work to earn some coin\n3(You ask if they have a bed, you are still tired after all.")
+                                                                        if (answer == 1) {
+                                                                            alert("You ask the Inn keeper about some rumours.'The Companions? In Jorrvaskr? They're recruiting new members, from what I hear.'")
+                                                                            alert("Who are the companions and what is a jorrvaskr you think to yourself.")
+                                                                            answer = prompt("1(You ask about some work to earn some coin\n2(You ask if they have a bed, you are still tired after all.")
+                                                                                    if (answer == 1) {
+                                                                                        alert("You ask the Inn keeper about some work.\n'You're asking a lot of qeustions aren't you?' The Inn keeper puts his hand on his axe.")
+                                                                                        answer = prompt("How will you diffuse the situation? \n\n 1(Tell him you don't know who you are and are searching for answers. \n2(Lie and tell you are from noble decent.")
+                                                                                            if (answer == 1) {
+                                                                                                alert("You chose to tell the truth.'You think im dumb enough to believe that?' The Inn keeper reaches for his axe.")
+                                                                                                alert("You get hit on the head by the end of the axe.")
+                                                                                                alert("You wake up with a headache. You are tied up in the middle of a grass field.")
+                                                                                                alert("You hear the chanting of a wild goblin tribe.")
+                                                                                                alert("They charge at you and begin taking bites out of you legs while you are struggeling to get free.")
+                                                                                                alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                                    }
+                                                                                            else if (answer == 2) {
+                                                                                                alert("You lied and told the Inn keeper your from noble decent.'Ha! Nobles wouldnt want to come to this village let alone work for me.' The Inn keeper reaches for his axe.")
+                                                                                                alert("You get hit on the head by the end of the axe.")
+                                                                                                alert("You wake up with a headache. You are tied up in the middle of a grass field.")
+                                                                                                alert("You hear the chanting of a wild goblin tribe.")
+                                                                                                alert("They charge at you and begin taking bites out of you legs while you are struggeling to get free.")
+                                                                                                alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                                    }
+                                                                                            else {
+                                                                                                error = true
+                                                                                                }
+                                                                                    }
+                                                                        }
+                                                                        else if (answer == 2){
+                                                                            answer = prompt("You ask the Inn keeper about some work.'Work? You could chop some wood for the fire for some coin.\n\n1(Chop some wood\n2(Decline")
+                                                                                if (answer == 1) {
+                                                                                    alert("You chop some wood. Then you go back inside.")
+                                                                                    answer = prompt("You return to the Inn keeper and exchange the wood for coin.\n\n1(Ask for a bed\n2(Go back outside")
+                                                                                        if (answer == 1) {
+                                                                                            alert("You ask for a bed. 'No sorry, we are full. If you asked when you came in we still had beds available.'")
+                                                                                            alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
+                                                                                            alert("You wake up to the sound of the chanting of a wild goblin tribe.")
+                                                                                            alert("Before you can react they are already at your legs taking bites out of you.")
+                                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                        }
+                                                                                        else if (answer == 2) {
+                                                                                            alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
+                                                                                            alert("You wake up to the sound of the chanting of a wild goblin tribe.")
+                                                                                            alert("Before you can react they are already at your legs taking bites out of you.")
+                                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                                        }
+                                                                                        else {
+                                                                                            error = true
+                                                                                        }
+                                                                                }
+                                                                        }
+                                                                        else if (answer == 3) {
+                                                                            alert("You ask if they have a bed available. 'No sorry, we are full. If you asked when you came in we still had a bed available.'")
+                                                                            alert("You feel like you cant stay awake much longer, so you go outside and lie down in a grass field ")
+                                                                            alert("You wake up to the sound of the chanting of a wild goblin tribe.")
+                                                                            alert("Before you can react they are already at your legs taking bites out of you.")
+                                                                            alert("You succomb to your injuries.\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                                                        }
+                                                                        else {
+                                                                            error = true
+                                                                        }
+                                                                }
+                                                                else {
+                                                                    error = true
+                                                                }
+                                                        }
+                                                        else {
+                                                            error = true
+                                                        }
+                                                }
+                                                else {
+                                                    error = true
+                                                }
 
                                         }
+                                        else if (answer == 2) {
+
+                                        }
+                                        else {
+                                            error = true
+                                        }
                                     
+                                }
+                                else if (answer == 2) {
+                                    alert("You ignore the wagon and continue walking.")
+                                    alert("When you get near the wagon, you look inside to see who is steering it. \n\nVery quickly you realise that a goblin is steering the wagon.")
+                                    alert("Multiple goblins jump out of of the back of hte wagon and start charging at you while chanting some words you cant understand.")
+                                    alert("While taken by suprise you get killed quite easily by the goblins. \n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                }
+                                else if (answer == 3) {
+                                    alert("You try to wave down the wagon. It doesnt go quite as planned as there are la lot of goblins in the back of the wagon, but because of the distance between you and the wagon you have enough time to run to safety.")
+                                    alert("You realise there are enough goblins and weapons on that wagon to wage war.")
+                                    alert("You start running away from them by running towards the north.")
+                                    alert("Since you are quite a bit bigger then goblins you outrun them quite easily.")
+                                    answer = prompt("After a while you reach the village. \n\n1(You can warn the village people \n2(You can also ignore them")
+                                        if (answer == 1) {
+                                            alert("You try to warn the people of the village but they won't listen. They think you are lying to their faces.")
+                                            alert("You hear the chanting of the goblins and you know that they are coming to attack.")
+                                            alert("the village people realise too late that you weren't lying to them and they all get slaughterd. \nYou are kidnapped and put on their")
+                                            alert("after a couple days of laying there you get killed by one of the goblins and used as food for their leader.\n\nLook on the bright side the leader goblin has a new meal to eat.\n\nGAME OVER")
+                                        }
+                                        else if(answer == 2) {
+                                            alert("You run past the village thinking to yourself you dont have to be the fastest as long as you are faster then the slowest.")
+                                            alert("While running away from the village and the goblins you notice another wagon of goblins coming in from the north. You are killed by the second wagon of goblins.\n\nLook on the bright side the goblins have a new meal to eat.\n\nGAME OVER")
+                                        }
+                                        else{
+                                            error = true
+                                        }
+                                }
+                                else {
+                                    error = true
                                 }
                         }
                         else {
@@ -225,6 +343,7 @@ if (answer == 1) {
         }
         else if (answer == 3) {
             alert("You head down south of the road.")
+            alert("This path hasn't been programmed yet get out.")
         }
         else {
             error = true
