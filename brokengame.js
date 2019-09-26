@@ -292,7 +292,60 @@ if (answer == 1) {
         }
         else if (answer == 3) {
             alert("You head down south of the road.")
-            alert("")
+            alert("After a while of walking you come across a tiny little house with an old lady standing outside trying to pick apples from an apple tree.")
+            answer = prompt("You can ask the old lady if you can help her or you can continue on your path. \n\n1(Help the old lady \n2(Continue walking down the road.")
+                if (answer == 1) {
+                    alert("You ask the old lady if you can help her with anything. She replies with that you could pick a few apples for her because she wants to bake apple pies.")
+                    answer = prompt("How many apples do you pick for the old lady?")
+                        if (answer <0) {
+                            error = true
+                        }
+                        else if (answer == 0) {
+                            alert("You didn't pick any apples.")
+                            alert("The old lady is angry and stabs you with a fork until you die.\n\nGAME OVER")
+                            location.reload();
+                        }
+                        else if (answer <5) {
+                            alert("You only picked a couple apples. Not nearly enough for the old lady.")
+                            alert("She gets angry and stabs you with a poinsonus blade.\n\nGAME OVER")
+                            location.reload();
+                        }
+                        else if (answer >=5) {
+                            if (answer <10) {
+                                alert("You picked enough apples for the old lady, and she bakes a apple pie for you.")
+                                alert("You start eating the apple pie the old lady made. \nQuite quickly you begin to feel unwell and drop to the ground clutching your stomach.\n\nYou have been poisoned by an old lady \n\nGAME OVER")
+                                location.reload();
+                            }
+                            else if (answer >=10) {
+                                if (answer <20) {
+                                    alert("You picked more then enough apples of the old lady. She is very gratefull and bakes you a apple pie.")
+                                    alert("You start eating the apple pie the old lady made. \nQuite quickly you begin to feel unwell and drop to the ground clutching your stomach.\n\nYou have been poisoned by an old lady \n\nGAME OVER")
+                                    location.reload();
+                                }
+                                else if (answer >=20) {
+                                    alert("There are not that many apples in the apple tree")
+                                    alert("You picked more then enough apples of the old lady. She is very gratefull and bakes you a apple pie.")
+                                    alert("You start eating the apple pie the old lady made. \nQuite quickly you begin to feel unwell and drop to the ground clutching your stomach.\n\nYou have been poisoned by an old lady \n\nGAME OVER")
+                                    location.reload();
+                                }
+                                
+                            }
+                            
+                        }
+                        
+                        else if (answer >20) {
+                            
+                        }
+                        else {
+                            error = true
+                        }
+                }
+                if (answer == 2){
+
+                }
+                else {
+                    error = true
+                }
             //alert("This path hasn't been programmed yet get out.")
             location.reload();
         }
