@@ -338,8 +338,7 @@ if (answer == 1) {
             console.log("lvl 41 - south road")
             alert("You head down south of the road.")
             alert("After a while of walking you come across a tiny little house with an old lady standing outside trying to pick apples from an apple tree.")
-            answer = prompt("You can ask the old lady if you can help her or you can continue on your path. \n\n1(Help the old lady \n2(Continue walking down the road.")
-                if (answer == 1) {
+            alert("You Help the old lady.") 
                     console.log("lvl 42 - old lady")
                     alert("You ask the old lady if you can help her with anything. She replies with that you could pick a few apples for her because she wants to bake apple pies.")
                     answer = prompt("How many apples do you pick for the old lady?")
@@ -389,16 +388,6 @@ if (answer == 1) {
                         else {
                             error = true
                         }
-                }
-                if (answer == 2){
-                    console.log("lvl 43 - ignore old lady")
-                    alert("You continue walking past the sweet old lady.")
-                    alert("While walking you notice there is a bull standing next to the road. The bull notices you and begins charging at you.")
-                    alert("because you haven't rested in a while you cant move out of the way fast enough. \nYou get impaled by the bulls hornes \n\nGAME OVER")
-                }
-                else {
-                    error = true
-                }
             location.reload();
         }
         else {
