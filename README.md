@@ -1,5 +1,5 @@
 # The Game
-Je gaat een toffe game in Python maken, waarin je verschillende keuzes kan maken. Deze game ga je eerst op papier beschrijven [mindmeister.com](mindmeister.com), daarna laat hem zien aan een van je docenten voordat je begint met programmeren!
+Je gaat een toffe game in Python maken, waarin je verschillende keuzes kan maken. Deze game ga je eerst op papier beschrijven (gebruik hiervoor [mindmeister.com](https://www.mindmeister.com)), daarna laat hem zien aan een van je docenten voordat je begint met programmeren!
 
 ### Functionele eisen
 Functionele eisen beschrijven welke functionaliteit je eindproduct moet bevatten. 
