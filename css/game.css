@@ -1,0 +1,41 @@
+body {
+  background-image: url("../img/background.jpg");
+}
+
+#screen {
+  position: absolute;
+  left: 25%;
+  top: 100px;
+}
+
+#text {
+  color: white;
+  position: absolute;
+  left: 25%;
+  top: 480px;
+  max-width: 640px;
+}
+
+button {
+  position: relative;
+  left: 25%;
+  top: 550px;
+  margin-right: 1%;
+  background-color: #FBA93A;
+  padding: 12px 6px;
+  border: solid 3px #EA7040;
+  border-radius: 25px;
+  color: #4691E4;
+}
+button:active {
+  background-color: #fa9405;
+  border: solid 3px #cf4b17;
+  color: #1d6dc9;
+}
+button:hover {
+  text-decoration: none;
+}
+
+#act2, #act3 {
+  display: none;
+}
